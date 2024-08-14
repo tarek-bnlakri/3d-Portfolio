@@ -4,10 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  assetsInclude:['**/*.glb']
-})
-export default {
+  assetsInclude: ['**/*.glb'],
   build: {
-    chunkSizeWarningLimit: 1000, // or a higher value
+    chunkSizeWarningLimit: 1000, // Adjust this value as needed
   },
-};
+})
