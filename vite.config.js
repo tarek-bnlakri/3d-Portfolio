@@ -6,3 +6,8 @@ export default defineConfig({
   plugins: [react()],
   assetsInclude:['**/*.glb']
 })
+export default {
+  build: {
+    chunkSizeWarningLimit: 1000, // or a higher value
+  },
+};
